@@ -7,6 +7,9 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
 
     <application
         android:allowBackup="true"
@@ -28,7 +31,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".watchMap"
+            android:name="watchMap"
             android:label="@string/title_activity_watch_map">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +39,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.8512BE23-528D-99C4-FF83-7CE5EE303F00"
+            android:value="8512BE23-528D-99C4-FF83-7CE5EE303F00"/>
+
     </application>
 
 </manifest>
