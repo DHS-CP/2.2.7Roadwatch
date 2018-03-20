@@ -34,6 +34,7 @@ public class MapFragment extends FragmentActivity implements OnMapReadyCallback 
     private List<String> categories = new ArrayList<String>();
     Map<String, Object> meta = new HashMap<String, Object>();
 
+
     // backendless constants
     public static final String APPLICATION_ID = "8512BE23-528D-99C4-FF83-7CE5EE303F00";
     public static final String API_KEY = "FF8076AF-785C-50A7-FF2F-30B2E12C3800";
