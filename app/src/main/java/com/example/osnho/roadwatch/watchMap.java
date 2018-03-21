@@ -1,4 +1,7 @@
-package com.example.osnho.roadwatch;
+/*import android.support.v4.app.FragmentActivity;
+
+import com.example.osnho.a227roadwatch.R;
+import com.google.android.gms.maps.OnMapReadyCallback;package com.example.osnho.roadwatch;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -34,7 +37,7 @@ public class watchMap extends FragmentActivity implements OnMapReadyCallback {
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @Override
+  /*  @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
@@ -43,4 +46,4 @@ public class watchMap extends FragmentActivity implements OnMapReadyCallback {
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
-}
+}*/

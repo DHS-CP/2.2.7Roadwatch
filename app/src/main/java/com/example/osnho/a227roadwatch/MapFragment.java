@@ -26,13 +26,22 @@ import java.util.Map;
 import java.util.HashMap;
 
 
-public class MapFragment extends FragmentActivity implements OnMapReadyCallback {
+public class MapFragment extends MapPlaceHolder implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     //backendless infrastructure for geopoint manipulation
     private List<String> categories = new ArrayList<String>();
     Map<String, Object> meta = new HashMap<String, Object>();
+    public MapFragment(double lat, double lon){//sets current latitude and longitude of a poithole
+        categories.add("potholes");
+        setLatitude(lat);
+        setLongitude(lon);
+    }
+    public void getInfo(){// implements abstract method from MapPlaceHolder
+        System.out.println("Latitude = " + getLatitude());//prints out marker info for user to see
+        System.out.println("Longitude = " + getLongitude());
+    }
 
 
     // backendless constants
@@ -112,6 +121,7 @@ public class MapFragment extends FragmentActivity implements OnMapReadyCallback 
         //}
 
         LatLng dublin = new LatLng(37.702152, -121.935791);
+
 
         // centers the map at about Dublin High School
         mMap.addMarker(new MarkerOptions().position(dublin).title("Dublin High School"));

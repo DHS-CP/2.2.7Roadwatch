@@ -1,15 +1,20 @@
 package com.example.osnho.a227roadwatch;
 
+import android.support.v4.app.FragmentActivity;
+
 import java.util.Map;
 
 /**
  * Created by zhu56662 on 3/20/2018.
  */
 
-public abstract class MapPlaceHolder {
+public abstract class MapPlaceHolder extends FragmentActivity{
     private double latitude;
     private double longitude;
 
+    public MapPlaceHolder(){
+
+    }
     public MapPlaceHolder(double lat, double lon){
         latitude = lat;
         longitude = lon;
@@ -31,5 +36,5 @@ public abstract class MapPlaceHolder {
         this.longitude = longitude;
     }
 
-    public abstract String getInfo();
+    public abstract void getInfo();
 }
